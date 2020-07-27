@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        cellTable.delegate = self
+        cellTable.dataSource = self
     }
 
-
+    @IBOutlet weak var cellTable: UITableView!
+    
 }
 
